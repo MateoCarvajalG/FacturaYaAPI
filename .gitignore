@@ -8,3 +8,4 @@ test-results.xml
 .env
 *.repo
 package-lock.json
+mongodb+srv:

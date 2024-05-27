@@ -1,4 +1,6 @@
 import convict from 'convict';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const appConfig = convict({
   api: {
@@ -29,6 +31,20 @@ const appConfig = convict({
       default: `${ __dirname }/../../logs/debug.log`,
       env: 'LOG_FILE'
     },
+  },
+  mongoose:{
+    connection_string:{
+      doc:'connection uri to mongo',
+      format:String,
+      default:'hola',
+      env:'APP_MONGO_URI'
+    },
+    db_name:{
+      doc:'Database name',
+      format:String,
+      default:'test',
+      env:'DB_NAME_APP'
+    }
   }
 });
 

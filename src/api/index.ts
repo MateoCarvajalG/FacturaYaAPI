@@ -1,9 +1,10 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import appConfig from '../shared/infrastructure/config';
+import { mongooseLoader } from './loaders/mongoose.loader';
 
 import { Server } from './models';
 
 try {
+  mongooseLoader(appConfig.get('mongoose.connection_string'),appConfig.get('mongoose.db_name'))
   new Server().listen();
 } catch (e) {
   console.log(e);
