@@ -1,7 +1,6 @@
 import { createLogger, format, transports } from 'winston';
 import appConfig from '../../shared/infrastructure/config';
 
-
 const { timestamp, combine, json } = format;
 
 export const logger = createLogger({
@@ -10,7 +9,7 @@ export const logger = createLogger({
       level: 'debug',
       maxsize: 10240000,
       maxFiles: 5,
-      filename: `${appConfig.get('mongoose.connection_string')}/debug.log`,
+      filename: `${appConfig.get('logs.file')}/debug.log`,
       format: combine(
         timestamp(),
         json()
@@ -25,4 +24,5 @@ export const logger = createLogger({
     })
   ]
 })
+
 
