@@ -10,7 +10,7 @@ export class UserNameAndSurname extends StringValueObject {
     }
     
   private ensureValueIsValid(value: string,type:string): void {
-    if(!value) throw new ErrorHandler(400,40004,`The customer ${type} is required`)
+    if(!value) throw new ErrorHandler(400,40001,`The user ${type} is required`)
     if(!/^[A-Z][A-ZÀ-ÿ \\u00f1 \\u00d1 \\s]{0,18}[A-Z]$/.test(value)) {
       throw new ErrorHandler(400,40005,`The ${type} <${value}> is not valid`);
     }

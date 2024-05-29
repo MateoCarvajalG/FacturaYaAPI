@@ -9,7 +9,7 @@ export class UserDocument extends StringValueObject {
   }
 
   private ensureDocumentIsValid(value: string): void {
-    if(!value) throw new ErrorHandler(400,40003,'The customer document is required')
+    if(!value) throw new ErrorHandler(400,40002,'The user document is required')
     if(!/^(?=.{5,15}$)[A-Z\d-]+$/.test(value)) {
       throw new ErrorHandler(400,40004,'The customer document is not valid')
     }

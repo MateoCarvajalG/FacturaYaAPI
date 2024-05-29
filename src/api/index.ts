@@ -1,5 +1,5 @@
 import appConfig from '../shared/infrastructure/config';
-import { mongooseLoader } from './loaders/mongoose.loader';
+import { mongooseLoader } from '../shared/infrastructure/persistence/dbConfig';
 
 import { Server } from './models';
 

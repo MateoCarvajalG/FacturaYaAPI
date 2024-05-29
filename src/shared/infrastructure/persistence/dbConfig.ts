@@ -1,5 +1,6 @@
 import { Connection, createConnection } from 'mongoose';
-import { logger } from '../utils/log.util';
+import { logger } from '../../../api/utils/log.util';
+
 
 export const mongooseLoader = (dbUri: string, dbName: string) => {
   createConnection(dbUri, {

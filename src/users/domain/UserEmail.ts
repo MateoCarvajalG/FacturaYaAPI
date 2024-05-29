@@ -9,8 +9,9 @@ export class UserEmail extends StringValueObject {
   }
 
   private ensureIsAEmailValid(value: string): void {
+    if(!value) throw new ErrorHandler(400,40003,`The user email is required`)
     if( !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)){ 
-      throw new ErrorHandler(400,40008,`The customer email is wrong`)  
+      throw new ErrorHandler(400,40006,`The user email is wrong`)  
     }
   }
 }

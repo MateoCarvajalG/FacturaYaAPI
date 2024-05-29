@@ -15,18 +15,16 @@ type UserCreatorRequest = Request & {
 
 export class CreatorUserController implements Controller{
   constructor(private userCreator : UserCreator){
-    console.log('creator user controller',userCreator)
     this.userCreator = container.get('users.application.UserCreator')
   }
 
   async run(req: UserCreatorRequest, res: Response, next: NextFunction): Promise<void> {
-    console.log('controller')
     try {
       const {name,surname,email,document} = req.body
       await this.userCreator.run({name,surname,email,document})
       res.status(httpStatus.CREATED).json({"msg":'user succesfully created'})
     } catch (error) {
-      next(error)
+      return next(error)
     }
   }
 }
