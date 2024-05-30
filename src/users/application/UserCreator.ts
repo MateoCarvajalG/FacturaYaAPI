@@ -22,7 +22,6 @@ export class UserCreator {
         email     : new UserEmail(request.email)
       })
 
-      // Validaciones antes de insertar a base de datos
       const documentValidation= await this.repository.findByDocument(user.document)
       if(documentValidation) throw new ErrorHandler(400,40005,'User already exist')
 
