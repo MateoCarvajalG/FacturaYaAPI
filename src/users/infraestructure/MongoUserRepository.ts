@@ -57,7 +57,14 @@ export class MongoUserRepository implements UserRepository{
       return this.model.findOne({email:email}).lean()
     }
     return null 
- 
+  }
+
+  public async findAll(): Promise<Nullable<UserObject[]>> {
+    this.createModel()
+    if(this.model){
+      return this.model.find().lean()
+    }
+    return null
   }
 
   

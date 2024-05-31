@@ -4,7 +4,7 @@ export const UserCreatorSchema =[
     body('document','invalid document')
       .custom(value=>{
         if(!value) throw new Error('document is required')
-        if(!/^(?=.{5,15}$)[A-Z\d-]+$/.test(value)) {
+        if(!/^(?=.{5,100}$)[A-Z\d-]+$/.test(value)) {
           throw new Error('The user document is not valid')
         }
         return true

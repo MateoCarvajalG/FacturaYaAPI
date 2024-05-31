@@ -3,7 +3,8 @@ import { validatorHandler } from '../middlewares';
 import { CreatorUserController } from '../controllers'
 import container from '../dependency-injection/index';
 import appConfig from '../../shared/infrastructure/config';
-import { UserCreatorSchema } from '../dtos';
+import { FindUserSchema, UserCreatorSchema } from '../dtos';
+import { FinderUserController } from '../controllers/users/FinderUserController';
 
 
 
@@ -15,4 +16,19 @@ export const register = (router: Router) => {
     validatorHandler,
     (req: Request, res: Response, next: NextFunction) => UserCreatorController.run(req, res, next)
   )
+
+  const UserFinderController : FinderUserController = container.get('api.controller.FinderUserController')
+  router.get(
+    `${appConfig.get('api.prefix')}/users`,
+    FindUserSchema,
+    validatorHandler,
+    (req: Request, res: Response, next: NextFunction) => UserFinderController.run(req, res, next)
+  )
+
+  const UsersFinderController : FinderUserController = container.get('api.controller.FinderUsersController')
+  router.get(
+    `${appConfig.get('api.prefix')}/users/all`,
+    (req: Request, res: Response, next: NextFunction) => UsersFinderController.run(req, res, next)
+  )
+
 }
