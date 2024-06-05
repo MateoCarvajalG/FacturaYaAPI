@@ -325,72 +325,6 @@
 							"body": "{\n    \"errors\": {\n        \"name\": \"name is required\"\n    }\n}"
 						},
 						{
-							"name": "User name lowercase",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\":\"daniel\",\r\n    \"surname\":\"ALVAREZ\",\r\n    \"document\":\"1053765847\",\r\n    \"email\":\"daniel@hotmail.com\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/api/v1/users",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"api",
-										"v1",
-										"users"
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "52"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"34-qwMtguRsScJ58YIwsOde7IdX1JA\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 30 May 2024 03:42:35 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"errors\": {\n        \"name\": \"The customer name is not valid\"\n    }\n}"
-						},
-						{
 							"name": "User name more than 18 characters",
 							"originalRequest": {
 								"method": "POST",
@@ -521,72 +455,6 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"errors\": {\n        \"surname\": \"surname is required\"\n    }\n}"
-						},
-						{
-							"name": "User surname lowercase",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\":\"DANIEL\",\r\n    \"surname\":\"alvarez\",\r\n    \"document\":\"1053765847\",\r\n    \"email\":\"daniel@hotmail.com\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{base_url}}/api/v1/users",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"api",
-										"v1",
-										"users"
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "58"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"3a-O/IiagPqMqWt7TM90kGrqFpgXzc\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 30 May 2024 03:43:26 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"errors\": {\n        \"surname\": \"The customer surname is not valid\"\n    }\n}"
 						},
 						{
 							"name": "User surname more than 18 characters",
@@ -1016,20 +884,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users?document=1053765847",
+									"raw": "{{base_url}}/api/v1/users/105387999",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users"
-									],
-									"query": [
-										{
-											"key": "document",
-											"value": "1053765847"
-										}
+										"users",
+										"105387999"
 									]
 								}
 							},
@@ -1051,15 +914,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "123"
+									"value": "125"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"7b-mGxwSEXSw7U3EGQgYd7N9EEBuUA\""
+									"value": "W/\"7d-ymqsb6HEwk2Gks8yEfjwB3nByQo\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 31 May 2024 02:16:36 GMT"
+									"value": "Wed, 05 Jun 2024 01:48:40 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1071,7 +934,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"_id\": \"6657f94ff4632e05bedfadfd\",\n    \"name\": \"DANIEL\",\n    \"surname\": \"ALVAREZ\",\n    \"document\": \"1053765847\",\n    \"email\": \"daniel@hotmail.com\"\n}"
+							"body": "{\n    \"_id\": \"66590227fcbd3ba248425b86\",\n    \"name\": \"MATEO\",\n    \"surname\": \"GARCIA\",\n    \"document\": \"105387999\",\n    \"email\": \"gasperteo95@hotmail.com\"\n}"
 						},
 						{
 							"name": "User not found",
@@ -1079,20 +942,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users?document=1538343",
+									"raw": "{{base_url}}/api/v1/users/10538799912",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users"
-									],
-									"query": [
-										{
-											"key": "document",
-											"value": "1538343"
-										}
+										"users",
+										"10538799912"
 									]
 								}
 							},
@@ -1122,7 +980,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 31 May 2024 02:48:15 GMT"
+									"value": "Wed, 05 Jun 2024 01:49:13 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1137,25 +995,20 @@
 							"body": "{\n    \"error\": {\n        \"code\": 40406,\n        \"message\": \"User not found\"\n    }\n}"
 						},
 						{
-							"name": "User Document is more than 100 characteres",
+							"name": "User document invalid",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users?document=1053765847312323231111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+									"raw": "{{base_url}}/api/v1/users/10538799912asdas",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users"
-									],
-									"query": [
-										{
-											"key": "document",
-											"value": "1053765847312323231111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
-										}
+										"users",
+										"10538799912asdas"
 									]
 								}
 							},
@@ -1185,70 +1038,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 31 May 2024 02:46:40 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"errors\": {\n        \"document\": \"Invalid document\"\n    }\n}"
-						},
-						{
-							"name": "User Document is required",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_url}}/api/v1/users?document=",
-									"host": [
-										"{{base_url}}"
-									],
-									"path": [
-										"api",
-										"v1",
-										"users"
-									],
-									"query": [
-										{
-											"key": "document",
-											"value": ""
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "42"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"2a-om+6VpGYe87VvHr1XNmbj8TTcFw\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 31 May 2024 02:47:27 GMT"
+									"value": "Wed, 05 Jun 2024 01:49:52 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1270,15 +1060,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/v1/users/all",
+							"raw": "{{base_url}}/api/v1/users",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"v1",
-								"users",
-								"all"
+								"users"
 							]
 						}
 					},
@@ -1340,6 +1129,901 @@
 							],
 							"cookie": [],
 							"body": "[\n    {\n        \"_id\": \"6657f94ff4632e05bedfadfd\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"1053765847\",\n        \"email\": \"daniel@hotmail.com\"\n    },\n    {\n        \"_id\": \"66590227fcbd3ba248425b86\",\n        \"name\": \"MATEO CARVAJAL\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"105387999\",\n        \"email\": \"mcarvmjgalg10@gmail.com\"\n    },\n    {\n        \"_id\": \"66590238fcbd3ba248425b8c\",\n        \"name\": \"MATEO CARVAJAL\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"1053879989\",\n        \"email\": \"mcarvmjgulg10@gmail.com\"\n    },\n    {\n        \"_id\": \"665935380242319883acc620\",\n        \"name\": \"MATEO\",\n        \"surname\": \"CARVAJAL\",\n        \"document\": \"1053845913\",\n        \"email\": \"mateo@hotmail.com\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"DANIEL\",\r\n    \"surname\":\"ALVAREZ\",\r\n    \"email\":\"daniel@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/users/1053765847",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1053765847"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User Succesfully",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"MATEO\",\r\n    \"surname\":\"GARCIA\",\r\n    \"email\":\"gasperteo@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-6YKOs3e4/4ZynB8t/ihgRPsAkew\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:40:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"user succesfully updated\"\n}"
+						},
+						{
+							"name": "User Not Found",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"MATEO\",\r\n    \"surname\":\"GARCIA\",\r\n    \"email\":\"gasperteo@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/10538799912",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"10538799912"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-T2NRxOHRBZtuKgeA1aiHUVpGVpQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:41:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"code\": 40406,\n        \"message\": \"User not found\"\n    }\n}"
+						},
+						{
+							"name": "Email already exists",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"MATEO\",\r\n    \"surname\":\"GARCIA\",\r\n    \"email\":\"gasperteo@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-NV0tB4asvl3YmqLBVhUNNKyHKZQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:41:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"code\": 40007,\n        \"message\": \"Email already exist\"\n    }\n}"
+						},
+						{
+							"name": "User name more than 18 characters",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mateomateomateomateomateomateomateomateo\",\r\n    \"surname\":\"GARCIA\",\r\n    \"email\":\"gasperteo95@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30-9UFBQTlh6m3G3ZGuhzl7Dwuo7Oo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:00:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"name\": \"The user name is not valid\"\n    }\n}"
+						},
+						{
+							"name": "User name required",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"surname\":\"garcia\",\r\n    \"email\":\"gasperteo95@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-pj5Q6G6ZWQ+WxcmlpdnSoD8CmuY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:04:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"name\": \"name is required\"\n    }\n}"
+						},
+						{
+							"name": "User Surname more than 18 characters",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mateo\",\r\n    \"surname\":\"garciagarciagarciagarciagarciagarciagarcia\",\r\n    \"email\":\"gasperteo95@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36-itUjTjA4YEeKRwYbT2G5wCIKB2g\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:02:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"surname\": \"The user surname is not valid\"\n    }\n}"
+						},
+						{
+							"name": "User surname is required",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mateo\",\r\n    \"email\":\"gasperteo95@hotmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-IDNe7lcQh2hyldJymj5KLoRjIBQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:04:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"surname\": \"surname is required\"\n    }\n}"
+						},
+						{
+							"name": "User Email Invalid",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"MATEO\",\r\n    \"surname\":\"GARCIA\",\r\n    \"email\":\"gasperteo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"32-Ox1iYS9sDA2/hK6YT9XivfjMvEE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:42:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"email\": \"The user email is not valid\"\n    }\n}"
+						},
+						{
+							"name": "User Email required",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"mateo\",\r\n    \"surname\":\"garcia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-r32Pqm5nFYHfsRLpmxZq2pAxbrY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:03:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"email\": \"email is required\"\n    }\n}"
+						},
+						{
+							"name": "all fields required",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/105387999",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"105387999"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-9M08dqQVfzLrBPQn+TkfhKBqaAU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 02:04:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"name\": \"name is required\",\n        \"surname\": \"surname is required\",\n        \"email\": \"email is required\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/users/1053765847",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1053765847"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Removed Succesfully",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/10537658481",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"10537658481"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-Ftl1nd3qrrTQKihSiqj8Q08+KZ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:44:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"user succesfully removed\"\n}"
+						},
+						{
+							"name": "User not found",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/1053765847",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1053765847"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-T2NRxOHRBZtuKgeA1aiHUVpGVpQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:37:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"code\": 40406,\n        \"message\": \"User not found\"\n    }\n}"
+						},
+						{
+							"name": "User Document Invalid",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/users/10537658481asd",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"10537658481asd"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-ZkOKso9A2ta+EpLPf28HRNlRFgE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jun 2024 01:44:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"code\": 40004,\n        \"message\": \"The customer document is not valid\"\n    }\n}"
 						}
 					]
 				}
