@@ -11,8 +11,8 @@ export class FinderUserController implements Controller{
   }
 
   async run(req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const { document } = req.query
+    try { 
+      const { document } = req.params
       const user = await this.userFinder.run(<string>document)
       res.status(httpStatus.FOUND).json(user)
     } catch (error) {

@@ -22,7 +22,7 @@ export class CreatorUserController implements Controller{
     try {
       const {name,surname,email,document} = req.body
       await this.userCreator.run({name,surname,email,document})
-      res.status(httpStatus.CREATED).json({"msg":'user succesfully created'})
+      res.status(httpStatus.OK).json({"msg":'user succesfully created'})
     } catch (error) {
       return next(error)
     }

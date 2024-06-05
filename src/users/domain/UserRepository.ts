@@ -16,4 +16,6 @@ export interface UserRepository{
   findByEmail(email:UserEmail):Promise<Nullable<UserObject>>
   findAll():Promise<Nullable<UserObject[]>>
   save(user:User):Promise<void>
+  updateUserByid(document: UserDocument,update:Omit<User,'document'>):Promise<Nullable<UserObject>>
+  removerUserByDocument(document:UserDocument):Promise<Nullable<UserObject>>
 }

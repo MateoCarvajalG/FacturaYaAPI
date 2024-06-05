@@ -66,8 +66,26 @@ export class MongoUserRepository implements UserRepository{
     }
     return null
   }
-
   
+  public async updateUserByid(document: UserDocument, update: Omit<User, "document">): Promise<Nullable<UserObject>> {
+    this.createModel()
+    if(this.model){
+      return this.model.findOneAndUpdate(
+        {document:document},
+        update
+      )
+    }
+    return null
+  }
+
+  public async removerUserByDocument(document: UserDocument): Promise<Nullable<UserObject>> {
+    this.createModel()
+    if(this.model){
+      return this.model.deleteOne({document:document}).lean()
+    }
+    return null  
+  }
+
   public async save(user:User):Promise<void>{
     this.createModel()
     if(this.model){
