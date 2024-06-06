@@ -860,20 +860,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/v1/users?document=1053765847",
+							"raw": "{{base_url}}/api/v1/users/105387999",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"v1",
-								"users"
-							],
-							"query": [
-								{
-									"key": "document",
-									"value": "1053765847"
-								}
+								"users",
+								"105387999"
 							]
 						}
 					},
@@ -896,8 +891,8 @@
 									]
 								}
 							},
-							"status": "Found",
-							"code": 302,
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
@@ -922,7 +917,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 05 Jun 2024 01:48:40 GMT"
+									"value": "Thu, 06 Jun 2024 01:50:44 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1073,25 +1068,24 @@
 					},
 					"response": [
 						{
-							"name": "Find Users Succesfully",
+							"name": "Find All Users Succesfully",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users/all",
+									"raw": "{{base_url}}/api/v1/users",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users",
-										"all"
+										"users"
 									]
 								}
 							},
-							"status": "Found",
-							"code": 302,
+							"status": "OK",
+							"code": 200,
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
@@ -1108,15 +1102,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "519"
+									"value": "9162"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"207-cqZ8VcRbnNYgbk0YlzgjgeZGyuo\""
+									"value": "W/\"23ca-Xcldr44PD2xuufy969U3fAa5ZGI\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 31 May 2024 03:04:07 GMT"
+									"value": "Thu, 06 Jun 2024 01:51:25 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1128,7 +1122,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"_id\": \"6657f94ff4632e05bedfadfd\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"1053765847\",\n        \"email\": \"daniel@hotmail.com\"\n    },\n    {\n        \"_id\": \"66590227fcbd3ba248425b86\",\n        \"name\": \"MATEO CARVAJAL\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"105387999\",\n        \"email\": \"mcarvmjgalg10@gmail.com\"\n    },\n    {\n        \"_id\": \"66590238fcbd3ba248425b8c\",\n        \"name\": \"MATEO CARVAJAL\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"1053879989\",\n        \"email\": \"mcarvmjgulg10@gmail.com\"\n    },\n    {\n        \"_id\": \"665935380242319883acc620\",\n        \"name\": \"MATEO\",\n        \"surname\": \"CARVAJAL\",\n        \"document\": \"1053845913\",\n        \"email\": \"mateo@hotmail.com\"\n    }\n]"
+							"body": "[\n    {\n        \"_id\": \"66590227fcbd3ba248425b86\",\n        \"name\": \"MATEO\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"105387999\",\n        \"email\": \"gasperteo95@hotmail.com\"\n    },\n    {\n        \"_id\": \"66590238fcbd3ba248425b8c\",\n        \"name\": \"MATEO CARVAJAL\",\n        \"surname\": \"GARCIA\",\n        \"document\": \"1053879989\",\n        \"email\": \"mcarvmjgulg10@gmail.com\"\n    },\n    {\n        \"_id\": \"665935380242319883acc620\",\n        \"name\": \"MATEO\",\n        \"surname\": \"CARVAJAL\",\n        \"document\": \"1053845413\",\n        \"email\": \"mateo@hotmail.com\"\n    },\n    {\n        \"_id\": \"665a3fd15e2476dc0f19388a\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105376584899999\",\n        \"email\": \"danieli@hotmail.com\"\n    },\n    {\n        \"_id\": \"665a3fdf5e2476dc0f193890\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105376584899999999999\",\n        \"email\": \"daniela@hotmail.com\"\n    },\n    {\n        \"_id\": \"665a3feb5e2476dc0f193894\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105376584899999999999888888\",\n        \"email\": \"daniela1@hotmail.com\"\n    },\n    {\n        \"_id\": \"665a42175e2476dc0f19389c\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"75537658479\",\n        \"email\": \"daniel258@hotmail.com\"\n    },\n    {\n        \"_id\": \"665a441b5e2476dc0f1938a2\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"75537658480\",\n        \"email\": \"daniel259@hotmail.com\"\n    },\n    {\n        \"_id\": \"665df32d856d9ba9a7cb24e4\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105356584\",\n        \"email\": \"daniela125@hotmail.com\"\n    },\n    {\n        \"_id\": \"665df50d856d9ba9a7cb24e9\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854521\",\n        \"email\": \"daniel123@gmail.com\"\n    },\n    {\n        \"_id\": \"665df50e856d9ba9a7cb24ed\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854522\",\n        \"email\": \"daniel124@gmail.com\"\n    },\n    {\n        \"_id\": \"665df50f856d9ba9a7cb24f1\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854523\",\n        \"email\": \"daniel125@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0417856d9ba9a7cb2508\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854524\",\n        \"email\": \"daniel126@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0417856d9ba9a7cb250e\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854525\",\n        \"email\": \"daniel127@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0418856d9ba9a7cb2511\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854526\",\n        \"email\": \"daniel128@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0418856d9ba9a7cb2516\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854527\",\n        \"email\": \"daniel129@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0418856d9ba9a7cb2518\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854528\",\n        \"email\": \"daniel130@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0418856d9ba9a7cb251f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854530\",\n        \"email\": \"daniel132@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0418856d9ba9a7cb2522\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854529\",\n        \"email\": \"daniel131@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2527\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854531\",\n        \"email\": \"daniel133@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb252a\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854532\",\n        \"email\": \"daniel134@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb252f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854535\",\n        \"email\": \"daniel137@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2531\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854534\",\n        \"email\": \"daniel136@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2537\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854536\",\n        \"email\": \"daniel138@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2539\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854537\",\n        \"email\": \"daniel139@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb253f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854533\",\n        \"email\": \"daniel135@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2541\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854539\",\n        \"email\": \"daniel141@gmail.com\"\n    },\n    {\n        \"_id\": \"665e0419856d9ba9a7cb2546\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854538\",\n        \"email\": \"daniel140@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb254a\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854542\",\n        \"email\": \"daniel144@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb254f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854543\",\n        \"email\": \"daniel145@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2552\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854540\",\n        \"email\": \"daniel142@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2557\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854544\",\n        \"email\": \"daniel146@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb255b\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854545\",\n        \"email\": \"daniel147@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb255f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854541\",\n        \"email\": \"daniel143@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2563\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854546\",\n        \"email\": \"daniel148@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2567\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854547\",\n        \"email\": \"daniel149@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb256b\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854548\",\n        \"email\": \"daniel150@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb256f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854549\",\n        \"email\": \"daniel151@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2573\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854550\",\n        \"email\": \"daniel152@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041a856d9ba9a7cb2578\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854552\",\n        \"email\": \"daniel154@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb257b\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854553\",\n        \"email\": \"daniel155@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb2580\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854554\",\n        \"email\": \"daniel156@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb2583\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854551\",\n        \"email\": \"daniel153@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb2586\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854555\",\n        \"email\": \"daniel157@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb258c\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854556\",\n        \"email\": \"daniel158@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb258f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854557\",\n        \"email\": \"daniel159@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb2592\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854558\",\n        \"email\": \"daniel160@gmail.com\"\n    },\n    {\n        \"_id\": \"665e041b856d9ba9a7cb2598\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"7514854559\",\n        \"email\": \"daniel161@gmail.com\"\n    },\n    {\n        \"_id\": \"665e04ab856d9ba9a7cb2748\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"10535658489\",\n        \"email\": \"daniela200@hotmail.com\"\n    },\n    {\n        \"_id\": \"665e052b856d9ba9a7cb274f\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ORTIZ\",\n        \"document\": \"10535658234\",\n        \"email\": \"daniela202@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fa8b336f04e02bbae4d03\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105376584755\",\n        \"email\": \"daniel222@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fa9ad36f04e02bbae4dc6\",\n        \"name\": \"DAVID\",\n        \"surname\": \"LOPEZ\",\n        \"document\": \"7855888585\",\n        \"email\": \"daniel223@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fb14636f04e02bbae4eb2\",\n        \"name\": \"DANIEL\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"105376584738\",\n        \"email\": \"daniel620@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fb4b9905640fdcad9ec6b\",\n        \"name\": \"JORGE\",\n        \"surname\": \"CANO\",\n        \"document\": \"8514854531\",\n        \"email\": \"daniel300@gmail.com\"\n    },\n    {\n        \"_id\": \"665fb702905640fdcad9ec71\",\n        \"name\": \"JORGE\",\n        \"surname\": \"CANO\",\n        \"document\": \"9514854525\",\n        \"email\": \"jorge@gmail.com\"\n    },\n    {\n        \"_id\": \"665fc206905640fdcad9ec78\",\n        \"name\": \"JORGE\",\n        \"surname\": \"CANO\",\n        \"document\": \"84854531\",\n        \"email\": \"cstripp0@gmail.com\"\n    },\n    {\n        \"_id\": \"665fc457905640fdcad9ec7d\",\n        \"name\": \"JORGE\",\n        \"surname\": \"CANO\",\n        \"document\": \"84854532\",\n        \"email\": \"cstripp1@gmail.com\"\n    },\n    {\n        \"_id\": \"665fc5ebc3ae8047f899b263\",\n        \"name\": \"mateo\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"1053765847\",\n        \"email\": \"daniel@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fca65fac833347db31c16\",\n        \"name\": \"mateoC\",\n        \"surname\": \"ALVAREZ\",\n        \"document\": \"1053765847232\",\n        \"email\": \"danie121l@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fcd6e5f9828bd81588a2d\",\n        \"name\": \"Gerty\",\n        \"surname\": \"Benner\",\n        \"document\": \"9950974380\",\n        \"email\": \"gbenner11@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12b5f9828bd81588a32\",\n        \"name\": \"Magda\",\n        \"surname\": \"Borsnall\",\n        \"document\": \"3864146429\",\n        \"email\": \"mborsnall1@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a36\",\n        \"name\": \"Rufus\",\n        \"surname\": \"Bayle\",\n        \"document\": \"9519839909\",\n        \"email\": \"rbayle3@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a3a\",\n        \"name\": \"Amos\",\n        \"surname\": \"Hatter\",\n        \"document\": \"3739420316\",\n        \"email\": \"ahatter5@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a3e\",\n        \"name\": \"Decca\",\n        \"surname\": \"McOwen\",\n        \"document\": \"3476285413\",\n        \"email\": \"dmcowen6@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a42\",\n        \"name\": \"Slade\",\n        \"surname\": \"Abrahmovici\",\n        \"document\": \"3221876319\",\n        \"email\": \"sabrahmovici7@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a46\",\n        \"name\": \"Buckie\",\n        \"surname\": \"Balma\",\n        \"document\": \"9772345269\",\n        \"email\": \"bbalma8@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12c5f9828bd81588a4a\",\n        \"name\": \"Boris\",\n        \"surname\": \"Bizley\",\n        \"document\": \"7634026336\",\n        \"email\": \"bbizley9@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fd12d5f9828bd81588a4e\",\n        \"name\": \"Lucky\",\n        \"surname\": \"Shellibeer\",\n        \"document\": \"5405422274\",\n        \"email\": \"lshellibeera@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fd12d5f9828bd81588a52\",\n        \"name\": \"Cherey\",\n        \"surname\": \"Grand\",\n        \"document\": \"3114335365\",\n        \"email\": \"cgrandb@hotmail.com\"\n    },\n    {\n        \"_id\": \"665fd12d5f9828bd81588a56\",\n        \"name\": \"Theodore\",\n        \"surname\": \"Phelp\",\n        \"document\": \"740304593\",\n        \"email\": \"tphelpc@gmail.com\"\n    },\n    {\n        \"_id\": \"665fd12e5f9828bd81588a5a\",\n        \"name\": \"Oren\",\n        \"surname\": \"Castellino\",\n        \"document\": \"1541913884\",\n        \"email\": \"ocastellinoem@yahoo.com\"\n    },\n    {\n        \"_id\": \"665fdd0f5f9828bd81588a60\",\n        \"name\": \"Gerty\",\n        \"surname\": \"Benner\",\n        \"document\": \"9950974381\",\n        \"email\": \"gbenner122@gmail.com\"\n    },\n    {\n        \"_id\": \"665fdd385f9828bd81588a64\",\n        \"name\": \"Gerty\",\n        \"surname\": \"Benner\",\n        \"document\": \"9150974380\",\n        \"email\": \"gbenner150@gmail.com\"\n    }\n]"
 						}
 					]
 				},

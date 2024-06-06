@@ -13,7 +13,7 @@ export class FinderUsersController implements Controller{
   async run(_req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const users = await this.userFinder.run()
-      res.status(httpStatus.FOUND).json(users)
+      res.status(httpStatus.OK).json(users)
     } catch (error) {
       return next(error)
     }

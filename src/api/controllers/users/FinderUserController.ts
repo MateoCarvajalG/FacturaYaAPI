@@ -14,7 +14,7 @@ export class FinderUserController implements Controller{
     try { 
       const { document } = req.params
       const user = await this.userFinder.run(<string>document)
-      res.status(httpStatus.FOUND).json(user)
+      res.status(httpStatus.OK).json(user)
     } catch (error) {
       return next(error)
     }
