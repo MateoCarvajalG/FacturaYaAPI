@@ -11,8 +11,8 @@ export class RemoverUserController implements Controller{
 
   async run(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const { document } = req.params
-      await this.userRemover.run(document)
+      const { document } = req.query
+      await this.userRemover.run(<string>document)
       res.status(httpStatus.OK).json({"msg":'user succesfully removed'})
     } catch (error) {
       return next(error)

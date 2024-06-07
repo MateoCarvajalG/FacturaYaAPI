@@ -43,7 +43,7 @@ export const register = (router: Router) => {
 
   const UserRemoverController : RemoverUserController = container.get('api.controller.RemoverUserController')
   router.delete(
-    `${appConfig.get('api.prefix')}/users/:document`,
+    `${appConfig.get('api.prefix')}/users`,
     (req: Request, res: Response, next: NextFunction) =>  UserRemoverController.run(req, res, next)
   )
 }

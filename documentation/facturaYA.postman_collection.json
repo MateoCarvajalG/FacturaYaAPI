@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "4f7515b3-d0a5-459e-846d-93fa0dae134b",
+		"_postman_id": "d606eccc-82ef-485f-a747-ba059017fabe",
 		"name": "facturaYA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "13842700"
+		"_exporter_id": "16329923"
 	},
 	"item": [
 		{
@@ -1832,34 +1832,44 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/v1/users/1053765847",
+							"raw": "{{base_url}}/api/v1/users?document=1053879989",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"v1",
-								"users",
-								"1053765847"
+								"users"
+							],
+							"query": [
+								{
+									"key": "document",
+									"value": "1053879989"
+								}
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "User Removed Succesfully",
+							"name": "Remove user Succesfully",
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users/10537658481",
+									"raw": "{{base_url}}/api/v1/users?document=1053879989",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users",
-										"10537658481"
+										"users"
+									],
+									"query": [
+										{
+											"key": "document",
+											"value": "1053879989"
+										}
 									]
 								}
 							},
@@ -1889,7 +1899,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 05 Jun 2024 01:44:19 GMT"
+									"value": "Fri, 07 Jun 2024 23:13:48 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1909,15 +1919,20 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users/1053765847",
+									"raw": "{{base_url}}/api/v1/users?document=105387998",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users",
-										"1053765847"
+										"users"
+									],
+									"query": [
+										{
+											"key": "document",
+											"value": "105387998"
+										}
 									]
 								}
 							},
@@ -1947,7 +1962,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 05 Jun 2024 01:37:23 GMT"
+									"value": "Fri, 07 Jun 2024 23:14:24 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1967,15 +1982,20 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v1/users/10537658481asd",
+									"raw": "{{base_url}}/api/v1/users?document=105387998sasa",
 									"host": [
 										"{{base_url}}"
 									],
 									"path": [
 										"api",
 										"v1",
-										"users",
-										"10537658481asd"
+										"users"
+									],
+									"query": [
+										{
+											"key": "document",
+											"value": "105387998sasa"
+										}
 									]
 								}
 							},
@@ -2005,7 +2025,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 05 Jun 2024 01:44:49 GMT"
+									"value": "Fri, 07 Jun 2024 23:14:47 GMT"
 								},
 								{
 									"key": "Connection",
